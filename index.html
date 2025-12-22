@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Green Key Hotel</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f7f4;
+    animation: fadePage 1.2s ease-in;
+}
+
+@keyframes fadePage{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+/* HERO */
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{ font-size:55px; }
+.hero p{ font-size:22px; margin-top:10px; }
+
+/* NAV */
+nav{
+    background:#1f6b45;
+    padding:14px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 14px;
+    font-weight:bold;
+}
+
+/* SECTION */
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#1f6b45;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+    text-align:center;
+    color:#1f6b45;
+    font-size:18px;
+}
+
+.card p{
+    text-align:center;
+    padding-bottom:15px;
+    font-weight:bold;
+}
+
+/* VIP */
+.vip{
+    background:linear-gradient(to right,#e8fff1,#f4fff8);
+    border-radius:16px;
+}
+
+.vip-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    align-items:center;
+}
+
+.vip-box img{
+    width:420px;
+    border-radius:16px;
+}
+
+/* GALLERY */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.gallery img{
+    width:260px;
+    height:180px;
+    margin:10px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+/* CONTACT */
+.contact-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.contact-card{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer{
+    background:#1f6b45;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <div>
+        <h1>Green Key Hotel</h1>
+        <p>Luxury • Nature • Comfort</p>
+    </div>
+</div>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#vip">VIP</a>
+    <a href="#restaurant">Restaurant</a>
+    <a href="#pool">Pool</a>
+    <a href="#spa">Spa</a>
+    <a href="#garden">Garden</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Us</h2>
+<p style="text-align:center;font-size:18px;">
+Green Key Hotel is a luxury hotel surrounded by nature, offering comfort, relaxation and world-class hospitality.
+</p>
+</section>
+
+<section id="rooms">
+<h2>Our Rooms</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<h3>Single Room</h3>
+<p>Rs. 12,000 / Night</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
+<h3>Double Room</h3>
+<p>Rs. 18,000 / Night</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32">
+<h3>Family Room</h3>
+<p>Rs. 25,000 / Night</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+<h3>Luxury Suite</h3>
+<p>Rs. 40,000 / Night</p>
+</div>
+
+</div>
+</section>
+
+<section id="vip" class="vip">
+<h2>VIP Room</h2>
+<div class="vip-box">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+<img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0">
+</div>
+</section>
+
+<section id="restaurant">
+<h2>Hotel Restaurant</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+<img src="https://images.unsplash.com/photo-1529042410759-befb1204b468">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+</div>
+</section>
+
+<section id="pool">
+<h2>Swimming Pool</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<img src="https://images.unsplash.com/photo-1477120127857-efc1a9f3a4b4">
+<img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2100b">
+<img src="https://images.unsplash.com/photo-1534854638093-bada1813ca19">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+<img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2">
+<img src="https://images.unsplash.com/photo-1519821172141-b5d8f31d0b0e">
+<img src="https://images.unsplash.com/photo-1544551763-cedf4e13ce0f">
+</div>
+</section>
+
+<section id="spa">
+<h2>Spa & Wellness</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1559599101-f09722fb4948">
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+<img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9">
+</div>
+</section>
+
+<section id="garden">
+<h2>Hotel Garden</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
+<img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-box">
+<div class="contact-card"><h3>Email</h3><p>greenkeyhotel@gmail.com</p></div>
+<div class="contact-card"><h3>Phone</h3><p>+94 77 123 4567</p></div>
+<div class="contact-card"><h3>Location</h3><p>Sri Lanka</p></div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Green Key Hotel | O/L Project</p>
+</footer>
+
+</body>
+</html>
